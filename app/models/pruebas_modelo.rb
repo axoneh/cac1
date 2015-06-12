@@ -1,2 +1,2 @@
-class PruebasModelo < ActiveRecord::Base
+  class PruebasModelo < ActiveRecord::Base
 end
