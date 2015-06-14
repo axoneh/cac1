@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  
+  get 'auth/:provider/callback', to: 'session#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'session#destroy', as: 'signout'
+
+  resources :session, only: [:create, :destroy]
+  resource :home, only: [:index]
+    
+  
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

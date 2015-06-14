@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150612234157) do
+ActiveRecord::Schema.define(version: 20150614141304) do
 
   create_table "antics", force: :cascade do |t|
     t.string  "nombre",       limit: 45
@@ -175,6 +175,7 @@ ActiveRecord::Schema.define(version: 20150612234157) do
     t.string   "uid",             limit: 255
     t.string   "token",           limit: 255
     t.datetime "expires_at"
+    t.string   "provider",        limit: 255
   end
 
 end
