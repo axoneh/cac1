@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+autorizados = Autorizado.delete_all
+autorizados = Autorizado.create([{"id"  => 1, "googleid" => "carlitosau@gmail.com"},{"id" => 2, "googleid" => "carlos@axoneh.com"}])
+
+antics = Antic.delete_all
+antics = Antic.create([{"id"=>1, "nombre" =>"Warfarina", "presentacion"=>"Tableta x 5 mg", "requiere_inr"=>0}])
+antics = Antic.create([{"id"=>2, "nombre" =>"Dabigatran", "presentacion"=>"Capsula x 75 mg ", "requiere_inr"=>1}])

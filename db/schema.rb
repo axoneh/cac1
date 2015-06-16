@@ -11,12 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614141304) do
+ActiveRecord::Schema.define(version: 20150614151050) do
 
   create_table "antics", force: :cascade do |t|
     t.string  "nombre",       limit: 45
     t.string  "presentacion", limit: 45
     t.boolean "requiere_inr", limit: 1
+  end
+
+  create_table "autorizados", force: :cascade do |t|
+    t.string "googleid", limit: 255
   end
 
   create_table "home_answers", force: :cascade do |t|
@@ -176,6 +180,9 @@ ActiveRecord::Schema.define(version: 20150614141304) do
     t.string   "token",           limit: 255
     t.datetime "expires_at"
     t.string   "provider",        limit: 255
+    t.string   "email",           limit: 255
+    t.string   "genero",          limit: 255
+    t.string   "foto",            limit: 255
   end
 
 end
