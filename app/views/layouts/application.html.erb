@@ -7,6 +7,40 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+	  	 <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	  	 	<div class="container">
+	  	 	<div class"navbar-header">
+	  	 	<a class="navbar-brand"><%= image_tag("CACBrand.png", height: '30') %></a>
+	  	 	</div>
+	  	 	<div class"navbar-collapse collapse">
+	  	 	<% if current_user %>
+	  	 		<a class="navbar-brand navbar-right" href="#">
+        		<img height="25" class="img-rounded" alt="Brand" src="<%= current_user.foto %>"</a>
+	  	 		
+	  	 		<ul class="nav navbar-nav navbar-right">
+	        		<li class="dropdown">
+	          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.nombre %> <span class="caret"></span></a>
+	         		 <ul class="dropdown-menu">
+	            		<li><a href="#">Opciones</a></li>
+	            		<li role="separator" class="divider"></li>
+	            		<li><%= link_to "Cerrar Sesión", signout_path, id: "sign_out" %></li>
+	          		</ul>
+	        		</li>
+	      		</ul>
+	 		<% else %>
+	 			<%= link_to "<i class=\"fa fa-google\"></i>Ingresar con Google", "/auth/google_oauth2", id: "sign_in", class:'btn btn-social btn-google navbar-btn navbar-right'%>
+	 		<% end %>
+	 		</div>
+	  	 </div>
+	  	 </div>
+  </body>
+</html>
+	
+  	
+  	
+  	
+  	<!--
+  	  	
     <div id="main-container" class="container-fluid">	
       <% if current_user %>
         Signed in as <strong><%= current_user.nombre %></strong>!
@@ -20,5 +54,7 @@
     </div>
   </body>
 </html>
+
+-->
 
 

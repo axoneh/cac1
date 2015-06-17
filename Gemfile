@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 
 
 group :development, :test do
