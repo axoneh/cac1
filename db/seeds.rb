@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+User.delete_all
+
 autorizados = Autorizado.delete_all
 autorizados = Autorizado.create([{"id"  => 1, "googleid" => "carlitosau@gmail.com"},{"id" => 2, "googleid" => "carlos@axoneh.com"}])
 

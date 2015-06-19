@@ -36,6 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem 'table_cloth'
 
 
 group :development, :test do

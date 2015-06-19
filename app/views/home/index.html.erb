@@ -1,9 +1,18 @@
-<h1>Bienvenido a la clinica de anticuagulacion</h1>
-<h2>register</h2>
+</br>
+</br>
+</br>
+<div class = "contanier-fluid">
+	<div class="row">
+		<div class="col-md-6">
+<table class="table table-striped table-bordered">
+<tr><th>ID</th><th>Nombre</th><th>Email</th></tr>
+<% usus=User.all.to_a %>
+<% usus.each do |n| %>
+<tr><td><%= n.id %></td>
+<td><%= n.nombre %></td>
+<td><%= n.email %></td></tr>
+	<% end %>
+</table>
+</div>
+</div>
 
-<p>Registrese</p>
-	
-
-<h2>Login</h2>
-
-<p>Login</p>
