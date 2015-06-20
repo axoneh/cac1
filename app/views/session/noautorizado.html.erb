@@ -1,0 +1,24 @@
+        <div class="section">
+            <div class="container">	
+            	<div class="row">
+            		<div class="col-md-4 col-md-offset-4"><div class="vspacer1"></div></div>
+            	</div>
+            	<div class="row">
+            		<div class="col-md-4 col-md-offset-4	"><center><%= image_tag("clinicaaxonazul.png", class: 'center') %></center></div>
+            	</div><div class="row">
+            		<div class="col-md-4 col-md-offset-4">
+            		<div class="panel panel-default">
+							  	<div class="panel-heading">
+							    <h2 class="panel-title">NO AUTORIZADO</h2>
+							  	</div>
+							  	<div class="panel-body">
+							  	<center><%= image_tag("zombi.png", class: 'center') %></center>	
+							    <p class="text-center"><strong><%= @goo.extra.raw_info.given_name %></strong>, esta cuenta no esta autorizada para entrar, recuerde utilizar su cuenta con dominio @axoneh.com</p>
+							    <% linkg = "<i class=\"fa fa-google\"></i> Quiero volver a intentarlo	" %>
+	 			<%= link_to linkg.html_safe, "/auth/google_oauth2", id: "sign_in", class:'btn btn-md btn-social btn-google btn-block'%>
+	 			<a href="#" class="btn btn-primary btn-md btn-block">Deseo mas información!</a>
+							  	</div>
+							  	<div class="panel-footer"><h5 class="small"><small></h5>&copy; 2015 Axon e-health</small><h5></div>
+						</div>
+            	</div>
+            	</div>

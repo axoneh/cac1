@@ -8,10 +8,10 @@ default: &default
   adapter: mysql2
   pool: 5
   timeout: 7000
-  host: cac.c6b5c7zwnkbd.us-west-2.rds.amazonaws.com
+  host: localhost
   port: 3306
   username: root
-  password: masarafa
+  password: 
 
 development:
   <<: *default

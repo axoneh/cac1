@@ -1,18 +1,75 @@
-</br>
-</br>
-</br>
-<div class = "contanier-fluid">
-	<div class="row">
+        <div class="section">
+            <div class="container">	
+            	<div class="row">
+            		<div class="col-md-4 col-md-offset-4"><div class="vspacer1"></div></div>
+            	</div>
+            	<div class="row">
+            		<div class="col-md-4 col-md-offset-4	"><center><%= image_tag("clinicaaxon.png", class: 'center') %></center></div>
+            	</div><div class="row">
+            		<div class="col-md-4 col-md-offset-4">
+            		<div class="panel panel-default">
+							  	<div class="panel-heading">
+							    <h2 class="panel-title">Bienvenido!</h2>
+							  	</div>
+							  	<div class="panel-body">
+							  	<center><%= image_tag("sumas.png", class: 'center') %></center>	
+							    <p class="text-center">La Clinica Axon de Anticoagulación controla con máximo resultado los pacientes en terapia anticoagulante oral, desde su casa!.</p>
+							    <% linkg = "<i class=\"fa fa-google\"></i> Ingresar con Google" %>
+	 			<%= link_to linkg.html_safe, "/auth/google_oauth2", id: "sign_in", class:'btn btn-md btn-social btn-google btn-block'%>
+	 			<a href="#" class="btn btn-primary btn-md btn-block">Deseo mas información!</a>
+							  	</div>
+							  	<div class="panel-footer"><h5 class="small"><small></h5>&copy; 2015 Axon e-health</small><h5></div>
+						</div>
+            	</div>
+            	</div>
+            	
+            	
+            	
+            	
+<!--     	
+                <div class="row supervcenter">
+                    <div class="col-md-8"><%= image_tag("clinicaaxon.png", class: 'pull-right') %></div>
+                    <div class="col-md-4">
+                    	<div class="panel panel-default">
+							  	<div class="panel-heading">
+							    <h3 class="panel-title">Bienvenido</h3>
+							  	</div>
+							  	<div class="panel-body">
+							    <p>La Clinica Axon de Anticoagulación es la mejor forma de controlar los pacientes anticoagulados de su entidad.</p>
+							    <% linkg = "<i class=\"fa fa-google\"></i> Ingresar con Google" %>
+	 			<%= link_to linkg.html_safe, "/auth/google_oauth2", id: "sign_in", class:'btn btn-md btn-social btn-google btn-block'%>
+	 			<a href="#" class="btn btn-primary btn-md btn-block">Deseo mas información!</a>
+							  	</div>
+						</div>
+                    	
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+ -->   
+ 
+<!--
+				<div class="row">
 		<div class="col-md-6">
-<table class="table table-striped table-bordered">
-<tr><th>ID</th><th>Nombre</th><th>Email</th></tr>
-<% usus=User.all.to_a %>
-<% usus.each do |n| %>
-<tr><td><%= n.id %></td>
-<td><%= n.nombre %></td>
-<td><%= n.email %></td></tr>
-	<% end %>
-</table>
+			<table class="table table-striped table-bordered">
+			<tr><th>ID</th><th>Nombre</th><th>Email</th></tr>
+			<% usus=User.all.to_a %>
+			<% usus.each do |n| %>
+			<tr><td><%= n.id %></td>
+			<td><%= n.nombre %></td>
+			<td><%= n.email %></td></tr>
+			<% end %>
+			</table>
+		</div>
+	</div>
+-->
+</div>	
 </div>
-</div>
+		
+
+
+
 
