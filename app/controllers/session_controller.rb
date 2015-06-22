@@ -5,7 +5,7 @@ class SessionController < ApplicationController
  def create
     lista=Autorizado.all #todos los autorizados
     userr=User.where(uid: auth_hash.uid).take #user es el campo del aut... si es nuevo es nil
-    
+    @goo=@@masa
     if lista.where(googleid: auth_hash.info.email).take == nil
           session[:user_id] = nil
           redirect_to action: "noautorizado" 

@@ -17,3 +17,36 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+body#index
+{
+background: url(image-path("CACBack.jpg")) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/*
+body#noautorizado
+{
+ background-color:red;
+}
+*/
+
+
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
+}
+.form-group.last { margin-bottom:0px; }
+
+.vspacer1 { 
+  height: 1px;
+  margin-top:40%;
+}
+
+.vspacer2 { 
+  height: 1px;
+  margin-top:90px;
+}
