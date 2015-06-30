@@ -4,13 +4,11 @@ Rails.application.routes.draw do
   get 'session/create', to: 'session#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'session#destroy', as: 'signout'
-  get 'session/nuevo', to: 'session#nuevo'
-   get 'session/noautorizado', to: 'session#noautorizado'
-  #resources :session, only: [:create, :destroy]
+  get 'user/new', to: 'user#new'
+  get 'session/noautorizado', to: 'session#noautorizado'
+  resources :session, only: [:create, :destroy]
   resource :home, only: [:index]
-    
-  
-  get 'home/index'
+  resources :user, only: [:new, :create, :destroy, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

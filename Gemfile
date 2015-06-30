@@ -38,6 +38,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'table_cloth'
 
+gem 'momentjs-rails', '>= 2.8.1'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14' 
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
